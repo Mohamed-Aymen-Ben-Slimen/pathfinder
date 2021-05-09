@@ -39,7 +39,7 @@ var View = {
         },
     },
     nodeColorizeEffect: {
-        duration: 50,
+        duration: 1,
     },
     nodeZoomEffect: {
         duration: 200,
