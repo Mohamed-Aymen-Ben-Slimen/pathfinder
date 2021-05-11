@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a54aec04-cf51-4c75-b4f2-342134a97d81" name="Default Changelist" comment="Add avoid turns to bi-directional A star">
+      <change afterPath="$PROJECT_DIR$/.idea/PathFinding.js.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1sBNQNVzNXm9BxcdeBL6V9RLgPb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a54aec04-cf51-4c75-b4f2-342134a97d81" name="Default Changelist" comment="" />
+      <created>1620342005666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620342005666</updated>
+      <workItem from="1620342006730" duration="9146000" />
+      <workItem from="1620391530326" duration="5750000" />
+      <workItem from="1620598616011" duration="7138000" />
+      <workItem from="1620769533205" duration="3062000" />
+    </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1620604067211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620604067211</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First commit">
+      <created>1620604087343</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620604087343</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First commit">
+      <created>1620604519905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620604519905</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add avoid turns to bi-directional A star">
+      <created>1620772099021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620772099021</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add avoid turns to bi-directional A star">
+      <created>1620772276098</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620772276098</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add avoid turns to bi-directional A star">
+      <created>1620772306519</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620772306519</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Add avoid turns to bi-directional A star" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add avoid turns to bi-directional A star" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1515" height="388" key="GridCell.Tab.0.bottom" timestamp="1620611819101">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="388" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620611819101" />
+    <state width="1515" height="388" key="GridCell.Tab.0.center" timestamp="1620611819100">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="388" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620611819100" />
+    <state width="1515" height="388" key="GridCell.Tab.0.left" timestamp="1620611819100">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="388" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620611819100" />
+    <state width="1515" height="388" key="GridCell.Tab.0.right" timestamp="1620611819101">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="388" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620611819101" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1620772310649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1620772310649" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620599245116">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1620599245116" />
+    <state x="569" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620604051503">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="569" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1620604051503" />
+  </component>
+</project>
