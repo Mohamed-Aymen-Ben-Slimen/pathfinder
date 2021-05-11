@@ -23,8 +23,6 @@ var DiagonalMovement = require('../core/DiagonalMovement');
  */
 function AStarFinder(opt) {
     opt = opt || {};
-    console.log( typeof opt);
-    console.log(opt);
     this.allowDiagonal = opt.allowDiagonal;
     this.dontCrossCorners = opt.dontCrossCorners;
     this.heuristic = opt.heuristic || Heuristic.manhattan;

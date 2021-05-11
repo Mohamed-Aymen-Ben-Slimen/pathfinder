@@ -17,6 +17,10 @@ var DiagonalMovement = require('../core/DiagonalMovement');
  *     (defaults to manhattan).
  * @param {number} opt.weight Weight to apply to the heuristic to allow for
  *     suboptimal paths, in order to speed up the search.
+ * @param {number} opt.avoidTurns Add penalties to discourage turning and
+ *      causing a 'staircase' effect (defaults to false).
+ * @param {number} opt.turnPenalty Penalty to add to turning. Higher numbers
+ *      discourage turning more (defaults to 1).
  */
 function BiAStarFinder(opt) {
     opt = opt || {};
@@ -25,6 +29,10 @@ function BiAStarFinder(opt) {
     this.diagonalMovement = opt.diagonalMovement;
     this.heuristic = opt.heuristic || Heuristic.manhattan;
     this.weight = opt.weight || 1;
+    this.avoidTurns = opt.avoidTurns;
+    this.turnPenalty = opt.turnPenalty || 1;
+
+    console.log(opt);
 
     if (!this.diagonalMovement) {
         if (!this.allowDiagonal) {
@@ -63,8 +71,10 @@ BiAStarFinder.prototype.findPath = function(startX, startY, endX, endY, grid) {
         heuristic = this.heuristic,
         diagonalMovement = this.diagonalMovement,
         weight = this.weight,
+        avoidTurns = this.avoidTurns,
+        turnPenalty = this.turnPenalty,
         abs = Math.abs, SQRT2 = Math.SQRT2,
-        node, neighbors, neighbor, i, l, x, y, ng,
+        lastDirection, node, neighbors, neighbor, i, l, x, y, ng,
         BY_START = 1, BY_END = 2;
 
     // set the `g` and `f` value of the start node to be 0
@@ -106,6 +116,13 @@ BiAStarFinder.prototype.findPath = function(startX, startY, endX, endY, grid) {
             // get the distance between current node and the neighbor
             // and calculate the next g score
             ng = node.g + ((x - node.x === 0 || y - node.y === 0) ? 1 : SQRT2);
+
+            // if we're avoiding turns, add penalties if the direction will change
+            if (avoidTurns) {
+                lastDirection = node.parent === undefined? undefined : { x : node.x - node.parent.x, y : node.y - node.parent.y };
+                var turned = lastDirection === undefined? 0 : lastDirection.x !== x - node.x || lastDirection.y !== y - node.y;
+                ng += turnPenalty * turned;
+            }
 
             // check if the neighbor has not been inspected yet, or
             // can be reached with smaller cost from the current node
@@ -151,6 +168,13 @@ BiAStarFinder.prototype.findPath = function(startX, startY, endX, endY, grid) {
             // get the distance between current node and the neighbor
             // and calculate the next g score
             ng = node.g + ((x - node.x === 0 || y - node.y === 0) ? 1 : SQRT2);
+
+            // if we're avoiding turns, add penalties if the direction will change
+            if (avoidTurns) {
+                lastDirection = node.parent === undefined? undefined : { x : node.x - node.parent.x, y : node.y - node.parent.y };
+                var turned2 = lastDirection === undefined? 0 : lastDirection.x !== x - node.x || lastDirection.y !== y - node.y;
+                ng += turnPenalty * turned2;
+            }
 
             // check if the neighbor has not been inspected yet, or
             // can be reached with smaller cost from the current node

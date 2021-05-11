@@ -28,7 +28,7 @@ var Panel = {
      * TODO: clean up this messy code.
      */
     getFinder: function() {
-        var finder, selected_header, heuristic, allowDiagonal, biDirectional, dontCrossCorners, weight, trackRecursion, timeLimit, avoidStaircase, turnPenalty;
+        var finder, selected_header, heuristic, allowDiagonal, biDirectional, dontCrossCorners, weight, trackRecursion, timeLimit, avoidTurns, turnPenalty;
 
 
         selected_header = $(
@@ -65,6 +65,8 @@ var Panel = {
                         dontCrossCorners: dontCrossCorners,
                         heuristic: PF.Heuristic[heuristic],
                         weight: weight,
+                        avoidTurns: avoidTurns,
+                        turnPenalty: turnPenalty
                     });
                 } else {
                     finder = new PF.AStarFinder({
@@ -105,18 +107,19 @@ var Panel = {
                     '.bi-directional:checked').val() !== 'undefined';
                 dontCrossCorners = typeof $('#bestfirst_section ' +
                     '.dont_cross_corners:checked').val() !== 'undefined';
+
                 heuristic = $('input[name=bestfirst_heuristic]:checked').val();
                 if (biDirectional) {
                     finder = new PF.BiBestFirstFinder({
                         allowDiagonal: allowDiagonal,
                         dontCrossCorners: dontCrossCorners,
-                        heuristic: PF.Heuristic[heuristic]
+                        heuristic: PF.Heuristic[heuristic],
                     });
                 } else {
                     finder = new PF.BestFirstFinder({
                         allowDiagonal: allowDiagonal,
                         dontCrossCorners: dontCrossCorners,
-                        heuristic: PF.Heuristic[heuristic]
+                        heuristic: PF.Heuristic[heuristic],
                     });
                 }
                 break;
